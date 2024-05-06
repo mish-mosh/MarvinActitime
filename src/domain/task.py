@@ -43,25 +43,3 @@ class Task:
             if duration.start_time.date() == date:
                 duration.total_seconds += difference_duration
                 break
-
-
-if __name__ == "__main__":
-    task = Task("Title", [])
-    task = Task(
-        "1234",
-        None,
-        "Title",
-        [
-            TimeDuration.of(
-                datetime.datetime.now() - datetime.timedelta(hours=5),
-                datetime.timedelta(hours=2),
-            ),
-            TimeDuration.of(
-                datetime.datetime.now() - datetime.timedelta(hours=3),
-                datetime.timedelta(hours=3, minutes=5),
-            ),
-        ],
-    )
-    print(task.total_tracked())
-    task.round_tracked_durations_for_date(datetime.date.today())
-    print(task.total_tracked())

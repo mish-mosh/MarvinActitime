@@ -66,7 +66,6 @@ class CliController:
         duration = self._get_duration(date)
         comment = inquirer.text("Enter a comment:").execute()
 
-        print(selected_task_id)
         self.actitime_adapter.account_time(selected_task_id, duration, comment)
 
         print(f"Accounted {duration} for task: {selected_task_id}")
