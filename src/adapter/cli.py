@@ -104,7 +104,7 @@ class CliController:
             #     print(f"Rounded task {task.title}")
 
             self.actitime_adapter.account_time(
-                task.actitime_id, task.tracked_for_date(date).rounded(), task.title
+                task.actitime_id, task.tracked_for_date(date).rounded()
             )
             print(
                 f"Accounted {task.tracked_for_date(date).rounded()} for task: {task.title}"
