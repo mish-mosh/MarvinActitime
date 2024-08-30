@@ -35,9 +35,9 @@ For this script `Python3.11` ist used.
 ## Links for development
 
 - Marvin-API: https://github.com/amazingmarvin/MarvinAPI/wiki
-  - Mit der REST-API kann man nur sehr schwer die Time-Tracking-Informationen der (gefilterten, z.B. von heute etc.) Tasks besorgen
 - CouchDB:
-  - Da kann man sogar filtern und alles mögliche, siehe [find-Beispiel Python](https://couchdb-python.readthedocs.io/en/latest/client.html#couchdb.client.Database.find) und [Find-API bei CouchDB](https://docs.couchdb.org/en/stable/api/database/find.html) 
-  - [Mit Marvin durch CouchDB anbinden - Beispiel mit Python](https://github.com/amazingmarvin/marvin-python/blob/master/marvin.py)
+  - [Database find](https://couchdb-python.readthedocs.io/en/latest/client.html#couchdb.client.Database.find)
+  - [Find-API](https://docs.couchdb.org/en/stable/api/database/find.html) 
+  - [Amazing Marvin Python example](https://github.com/amazingmarvin/marvin-python/blob/master/marvin.py)
   - [Marvin Data Types](https://github.com/amazingmarvin/MarvinAPI/wiki/Marvin-Data-Types)
   - [Couchdb Docker](https://hub.docker.com/_/couchdb/)
