@@ -5,11 +5,32 @@ to [ActiTime](https://www.actitime.com/).
 
 For this script `Python3.11` ist used.
 
+> **Note:** this is in early development and will very likely change.
+
 ## Features
+- *Time accounting for Amazing Marvin tasks:* Synchronise the time tracking information of tasks from Amazing Marvin to ActiTime
 - *Time accounting for pinned tasks:* Export time durations of a predefined set of tasks to ActiTime
   Therefor you need to copy the file `pinned_tasks.template.yaml` to `pinned_tasks.yaml` and fill your pinned tasks.
+- *Overtime tracking:* Track your daily overtime in CSV format and get your overtime balance
 
+## Installation
+- Make sure you have Python 3.11 installed.
+- Make a virtual environment: `python3.11 -m venv venv`
+- Activate the virtual environment: `source venv/bin/activate`
+- Install the requirements: `pip install -r requirements.txt`
+- Copy the file `.env.template` to `.env` and fill in your configs/credentials
+- Copy the file `pinned_tasks.template.yaml` to `pinned_tasks.yaml` and fill in your pinned tasks
 
+## Usage
+- Navigate to the project directory
+- Activate the virtual environment: `source venv/bin/activate`
+- Navigate to the source directory: `cd src`
+- Run the script: `PYTHONPATH=. python main.py`
+
+## Testing
+- Navigate to the project directory
+- Activate the virtual environment: `source venv/bin/activate`
+- Run the tests: `PYTHONPATH=src pytest`
 
 ## Links for development
 
