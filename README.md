@@ -27,6 +27,15 @@ For this script `Python3.11` ist used.
 - Navigate to the source directory: `cd src`
 - Run the script: `PYTHONPATH=. python main.py`
 
+### Mapping Marvin tasks to ActiTime tasks
+I order to synchronise the tracked time from Amazing Marvin to ActiTime,
+you need to place the following in the notes of the task in Amazing Marvin (replace the `URL` with the URL of the task in ActiTime):
+
+Meta.yml
+```
+actitimeUri: URL
+```
+
 ## Testing
 - Navigate to the project directory
 - Activate the virtual environment: `source venv/bin/activate`
